@@ -125,6 +125,7 @@
   justify-content: space-between;
   row-gap: 40px;
   list-style-type: none;
+  padding-left: 0;
 }
 .card {
   background-color: #fff;
@@ -406,7 +407,8 @@
   padding: 60px 102px 60px 80px;
   /* 224 min content height + padding */
   min-height: 344px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer__columns {
@@ -442,6 +444,7 @@
 }
 
 .footer__column-heading {
+  margin-top: 0;
   margin-bottom: 20px;
 }
 
@@ -461,7 +464,5 @@
 }
 
 .footer__copyright {
-  margin: 0;
-  position: absolute;
-  bottom: 60px;
+  margin: auto 0 0;
 }
